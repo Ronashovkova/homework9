@@ -8,7 +8,7 @@ public class RethrowingException {
 
     private void findFile() throws IOException {
         File newFile = new File("test.txt");
-        FileInputStream stream = new FileInputStream(newFile);
+        new FileInputStream(newFile);
     }
 
     public void checkException() {

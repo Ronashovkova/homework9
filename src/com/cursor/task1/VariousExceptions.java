@@ -5,24 +5,24 @@ import java.io.IOException;
 
 public class VariousExceptions {
     public void showExceptions() {
-        showExceptionA();
-        showExceptionB();
+        showForgetThingsException();
+        showForgetUmbrellaException();
         showNullPointerException();
         showIOException();
     }
 
-    private void showExceptionA() {
+    private void showForgetThingsException() {
         try {
-            throw new ExceptionA();
-        } catch (ExceptionA exception) {
+            throw new ForgetThingsException();
+        } catch (ForgetThingsException exception) {
             exception.printStackTrace();
         }
     }
 
-    private void showExceptionB() {
+    private void showForgetUmbrellaException() {
         try {
-            throw new ExceptionB();
-        } catch (ExceptionB exception) {
+            throw new ForgetUmbrellaException();
+        } catch (ForgetUmbrellaException exception) {
             exception.printStackTrace();
         }
     }
